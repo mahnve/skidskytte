@@ -1,0 +1,18 @@
+.container {
+	
+	max-width: 768px;
+	margin: 0 auto;    
+}
+
+h1, p {
+	text-align: center;
+}
+
+.sport {
+
+	padding: 20px;
+	font-size: 3em;
+	font-weight: bold;
+	background-color: #0F4DA8;
+	color: white;
+}
