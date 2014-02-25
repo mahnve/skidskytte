@@ -184,7 +184,15 @@
 (defn random-second-word []
   (random-word suffixes))
 
+(defn same-word-twice [word]
+  (not (nil? (re-find #"(.{4,}).*\1" word))))
+
+(defn two-sports []
+  (str (random-first-word) (random-second-word)))
 
 (defn new-sport []
-  (str (random-first-word) (random-second-word)))
+ (let [word (two-sports)]
+   (if (same-word-twice word)
+     (new-sport)
+     word)))
 
