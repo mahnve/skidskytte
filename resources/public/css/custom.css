@@ -1,7 +1,17 @@
+body {
+
+	background-color: lightgrey;
+	color: #333;
+}
 .container {
-	
+	background-color: #eee;	
 	max-width: 768px;
+	min-height: 1000px;
 	margin: 0 auto;    
+}
+
+.inner {
+	padding: 40px;
 }
 
 h1, p {
@@ -11,8 +21,13 @@ h1, p {
 .sport {
 
 	padding: 20px;
-	font-size: 3em;
+	font-size: 2.5em;
 	font-weight: bold;
 	background-color: #0F4DA8;
 	color: white;
+}
+
+.something-else {
+	padding: 20px;
+	font-style: italic;
 }
