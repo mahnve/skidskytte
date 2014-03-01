@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ReplState" timestamp="1393193625936">{:repl-history {:ide [], :local [&quot;(+ 1 )1&quot; &quot;(+ 1 1 3)&quot; &quot;['a' 'b' 'c']&quot; &quot;(def first ['a' 'b' 'c'])&quot; &quot;(def second_part ['d' 'e' 'f'])&quot; &quot;(first a)&quot; &quot;a&quot; &quot;(rand first_part)&quot; &quot;(first (shuffle first_part))&quot; &quot;(shuffle first_part\n   )&quot; &quot;(shuffle first_part\n         )&quot; &quot;(first '(shuffle user/first_part))&quot; &quot;(first first_part)&quot; &quot;(ns-unmap first)&quot; &quot;(ns-unmap user first)&quot; &quot;(ns-unmap 'user first)&quot; &quot;(ns-unmap  'first)&quot; &quot;(ns-unmap (find-ns 'user) 'first)&quot; &quot;(def first_part ['a' 'b' 'c'])&quot; &quot;(shuffle first_part)&quot; &quot;(first (shuffle user/first_part))&quot; &quot;(random-first-word)&quot; &quot;(random-first-word\n  )&quot; &quot;(random-second\n  -word)&quot; &quot;(random-second-word)&quot; &quot;(new-sport\n  )&quot; &quot;(new-sport)&quot; &quot;(use 'hiccup.core)&quot;], :remote []}}</component>
-</project>
-
