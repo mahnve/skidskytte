@@ -29,7 +29,7 @@
 (defn main [name]
   (hp/html5
     [:head
-     (hp/include-css "http://yui.yahooapis.com/pure/0.4.2/pure-min.css")
+     (hp/include-css "https://yui.yahooapis.com/pure/0.4.2/pure-min.css")
      (hp/include-css "/css/custom.css")]
     [:body
      [:div.container
