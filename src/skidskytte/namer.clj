@@ -155,6 +155,7 @@
                 "styrkelyft"
                 "störtlopp"
                 "snowboard"
+                "snooker"
                 "sumobrottning"
                 "tennis"
                 "tjurfäktning"
