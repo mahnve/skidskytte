@@ -136,6 +136,7 @@
                 "konståkning"
                 "lacrosse"
                 "landhockey"
+                "lerduveskytte"
                 "längdhopp"
                 "löpning"
                 "maraton"
