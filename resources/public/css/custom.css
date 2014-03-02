@@ -11,7 +11,7 @@ body {
 }
 
 .inner {
-	padding: 40px;
+	padding: 20px;
 }
 
 h1, p {
@@ -21,7 +21,7 @@ h1, p {
 .sport {
 
 	padding: 20px;
-	font-size: 2.5em;
+	font-size: 1.4em;
 	font-weight: bold;
 	background-color: #0F4DA8;
 	color: white;
