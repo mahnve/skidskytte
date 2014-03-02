@@ -31,6 +31,9 @@
 (defn main [name]
   (hp/html5
     [:head
+     [:meta {:charset "utf-8"}]
+     [:title "Skidskytteroulette"]
+     [:meta {:name "viewport" :content "width=device-width" :initial-scale "1"}]
      (hp/include-css "/css/pure-base-min.css")
      (hp/include-css "/css/custom.css")]
     [:body
