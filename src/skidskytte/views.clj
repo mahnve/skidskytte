@@ -3,7 +3,7 @@
             [hiccup.page :as hp]))
 
 
-(def fb-like-button "<div id=\"fb-root\"></div>
+(def fb-api "<div id=\"fb-root\"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
@@ -11,6 +11,8 @@
   js.src = \"//connect.facebook.net/en_US/all.js#xfbml=1&appId=404540083024310\";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>")
+
+(def fb-like-button "<div class=\"fb-like\" data-href=\"https://www.skidskytteroulette.se\" data-layout=\"standard\" data-action=\"like\" data-show-faces=\"true\" data-share=\"true\"></div>")
 
 (def tweet-button "<a href=\"https://twitter.com/share\" class=\"twitter-share-button\" data-url=\"http://www.skidskytteroulette.se\" data-text=\"Hitta din nya sport på \" data-lang=\"sv\">Tweeta</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>")
@@ -39,7 +41,7 @@
         [:p.sport name]
         [:p.something-else "Nja, det låter trist, jag vill pröva "
          [:a {:href "/"} "något annat"]]
-        [:div.fb-like fb-like-button]
-        [:div.tweet-button tweet-button]]]
-     [:div google-analytics]]))
+        [:div.fb-like.social fb-like-button]
+        [:div.tweet-button.social tweet-button]]]
+     [:div google-analytics fb-api]]))
 
