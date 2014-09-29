@@ -26,7 +26,7 @@
   ga('create', 'UA-160245-6', 'skidskytteroulette.se');
   ga('send', 'pageview');
 
-</script>")
+  </script>")
 
 (defn main [name]
   (hp/html5
@@ -46,5 +46,5 @@
          [:a {:href "/"} "något annat"]]
         [:div.fb-like.social fb-like-button]
         [:div.tweet-button.social tweet-button]]]
+     [:script {:src "js/skidskytte.js"}]
      [:div google-analytics fb-api]]))
-

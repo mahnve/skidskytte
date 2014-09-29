@@ -8,6 +8,7 @@
 
 (defroutes app-routes
   (GET "/" [] (views/main (namer/new-sport)))
+  (GET "/api/random" [] (namer/new-sport))
   (route/resources "/")
   (route/not-found "Not Found"))
 
