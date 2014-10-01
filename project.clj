@@ -9,7 +9,6 @@
                  [org.clojure/clojurescript "0.0-2356"]
                  [reagent "0.4.2"]
                  [cljs-ajax "0.3.2"]]
-
   :uberjar-name "skidskytte-standalone.jar"
   :plugins [[cider/cider-nrepl "0.7.0"]
             [lein-ring "0.8.10"]

@@ -42,6 +42,7 @@
         [:h1 "Skidskytteroulette"]
         [:p#sport.sport [:span name]]
         [:p "Om du gillar skidskytte och nordisk kombination så kanske du också gillar"]
+        [:p#sport.sport [:span name]]
         [:p.something-else "Nja, det låter trist, jag vill pröva "
          [:a {:onclick "skidskytte.get_new_sport(); return false" :href "/"} "något annat"]]
         [:div.fb-like.social fb-like-button]
