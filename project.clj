@@ -7,7 +7,8 @@
                  [hiccup "1.0.5"]
                  [ring/ring-jetty-adapter "1.1.6"]
                  [org.clojure/clojurescript "0.0-2356"]
-                 [reagent "0.4.2"]]
+                 [reagent "0.4.2"]
+                 [cljs-ajax "0.3.2"]]
   :uberjar-name "skidskytte-standalone.jar"
   :plugins [[cider/cider-nrepl "0.7.0"]
             [lein-ring "0.8.10"]
