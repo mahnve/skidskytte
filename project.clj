@@ -6,14 +6,18 @@
                  [compojure "1.1.6"]
                  [hiccup "1.0.5"]
                  [ring/ring-jetty-adapter "1.1.6"]
-                 [org.clojure/clojurescript "0.0-2356"]]
+                 [org.clojure/clojurescript "0.0-2356"]
+                 [reagent "0.4.2"]]
   :uberjar-name "skidskytte-standalone.jar"
   :plugins [[cider/cider-nrepl "0.7.0"]
             [lein-ring "0.8.10"]
             [lein-cljsbuild "1.0.3"]]
   :cljsbuild {:builds
               [{:source-paths ["src/cljs"]
-                :compiler {:output-to "resources/public/js/skidskytte.js"
+                :compiler {:output-dir "resources/public/js"
+                           :output-to "resources/public/js/skidskytte.js"
+                           :preamble ["reagent/react.js"]
+                           :source-map "resources/public/js/skidskytte.js.map"
                            :optimizations :whitespace
                            :pretty-print true}}]}
   :ring {:handler skidskytte.handler/app}

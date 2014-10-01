@@ -41,7 +41,7 @@
        [:div.inner
         [:h1 "Skidskytteroulette"]
         [:p "Om du gillar skidskytte så kanske du också gillar"]
-        [:p.sport name]
+        [:p#sport.sport [:span name]]
         [:p.something-else "Nja, det låter trist, jag vill pröva "
          [:a {:href "/"} "något annat"]]
         [:div.fb-like.social fb-like-button]

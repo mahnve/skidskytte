@@ -1,3 +1,9 @@
-(ns skidskytte)
+(ns skidskytte
+  (:require [reagent.core :as reagent :refer [atom]]))
 
-(.write js/document "Hello ClojureScript")
+(defn sport []
+  [:span "Sport"])
+
+(defn render []
+  (reagent/render-component [sport]
+                            (.getElementById js/document "sport")))
