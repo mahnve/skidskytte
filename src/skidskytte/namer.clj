@@ -152,6 +152,7 @@
                 "skateboard"
                 "skytte"
                 "slalom"
+                "stafett"
                 "styrkelyft"
                 "störtlopp"
                 "snowboard"
