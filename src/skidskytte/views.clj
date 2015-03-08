@@ -40,7 +40,7 @@
      [:div.container
        [:div.inner
         [:h1 "Skidskytteroulette"]
-        [:p "Om du gillar skidskytte så kanske du också gillar"]
+        [:p "Om du gillar skidskytte och nordisk kombination så kanske du också gillar"]
         [:p.sport name]
         [:p.something-else "Nja, det låter trist, jag vill pröva "
          [:a {:href "/"} "något annat"]]
