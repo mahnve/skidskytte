@@ -1,5 +1,6 @@
 (ns skidskytte.handler
   (:use compojure.core)
+  (:gen-class)
   (:require [compojure.handler :as handler]
             [compojure.route :as route]
             [skidskytte.namer :as namer]
@@ -15,5 +16,5 @@
 (def app
   (handler/site app-routes))
 
-(defn -main [port]
-  (jetty/run-jetty app {:port (Integer. port) :join? false}))
+(defn -main [& args]
+  (jetty/run-jetty app {:port (Integer. (first args)) :join? false}))
