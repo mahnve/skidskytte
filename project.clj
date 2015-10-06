@@ -29,4 +29,4 @@
              :uberjar {:aot :all
                        :omit-source true
                        :cljsbuild {:jar true}}}
-  :min-lein-version "2.0.0")
+  :min-lein-version "2.5.0")
