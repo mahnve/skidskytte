@@ -25,8 +25,7 @@
                                 :pretty-print true}}}}
   :ring {:handler skidskytte.handler/app}
   :profiles {:dev {:dependencies [[javax.servlet/servlet-api "2.5"]
-                                  [ring-mock "0.1.5"]]
-                   :plugins [[com.cemerick/austin "0.1.5"]]}
+                                  [ring-mock "0.1.5"]]}
              :uberjar {:aot :all
                        :omit-source true
                        :cljsbuild {:jar true}}}
