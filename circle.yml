@@ -1,6 +1,6 @@
 test:
   override:
-    - lein test
+    - boot test
 deployment:
   production:
     branch: master
