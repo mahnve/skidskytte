@@ -30,22 +30,23 @@
 
 (defn main [name]
   (hp/html5
-    [:head
-     [:meta {:charset "utf-8"}]
-     [:title "Skidskytteroulette"]
-     [:meta {:name "viewport" :content "width=device-width" :initial-scale "1"}]
-     (hp/include-css "/css/pure-base-min.css")
-     (hp/include-css "/css/custom.css")]
-    [:body
-     [:div.container
-       [:div.inner
-        [:h1 "Skidskytteroulette"]
-        [:p "Om du gillar skidskytte och nordisk kombination så kanske du också gillar"]
-        [:p#sport.sport [:span name]]
-        [:p.something-else "Nja, det låter trist, jag vill pröva "
-         [:a {:onclick "skidskytte.get_new_sport(); return false" :href "/"} "något annat"]]
-        [:div.fb-like.social fb-like-button]
-        [:div.tweet-button.social tweet-button]]]
-     [:script {:src "js/skidskytte.js"}]
-     [:script "skidskytte.render()"]
-     [:div google-analytics fb-api]]))
+   [:head
+    [:meta {:charset "utf-8"}]
+    [:title "Skidskytteroulette"]
+    [:meta {:name "viewport" :content "width=device-width" :initial-scale "1"}]
+    [:meta { :name "google-site-verification" :content "r7VtbOM8b_7mep2VcJfOfm1FhQl5R9w-I9C_yoJm90k"}]
+    (hp/include-css "/css/pure-base-min.css")
+    (hp/include-css "/css/custom.css")]
+   [:body
+    [:div.container
+     [:div.inner
+      [:h1 "Skidskytteroulette"]
+      [:p "Om du gillar skidskytte och nordisk kombination så kanske du också gillar"]
+      [:p#sport.sport [:span name]]
+      [:p.something-else "Nja, det låter trist, jag vill pröva "
+       [:a {:onclick "skidskytte.get_new_sport(); return false" :href "/"} "något annat"]]
+      [:div.fb-like.social fb-like-button]
+      [:div.tweet-button.social tweet-button]]]
+    [:script {:src "js/skidskytte.js"}]
+    [:script "skidskytte.render()"]
+    [:div google-analytics fb-api]]))
