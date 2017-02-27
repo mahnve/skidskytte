@@ -1,4 +1,4 @@
-(ns skidskytte
+(ns skidskytte.main
   (:require [reagent.core :as reagent :refer [atom]]
             [ajax.core :refer [GET]]))
 

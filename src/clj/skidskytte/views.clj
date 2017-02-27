@@ -48,5 +48,5 @@
       [:div.fb-like.social fb-like-button]
       [:div.tweet-button.social tweet-button]]]
     [:script {:src "js/skidskytte.js"}]
-    [:script "skidskytte.render()"]
+    [:script "skidskytte.main.render()"]
     [:div google-analytics fb-api]]))
