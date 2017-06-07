@@ -1,6 +1,3 @@
-test:
-  override:
-    - boot test
 deployment:
   production:
     branch: master
