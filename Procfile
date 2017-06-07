@@ -1,1 +1,1 @@
-web: java $JVM_OPTS -cp target/skidskytte-standalone.jar clojure.main -m skidskytte.handler $PORT
+web: java $JVM_OPTS -cp target/uberjar/skidskytte.jar clojure.main -m skidskytte.core

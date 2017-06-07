@@ -1,20 +1,27 @@
 (ns skidskytte.handler
-  (:use compojure.core)
-  (:gen-class)
-  (:require [compojure.handler :as handler]
+  (:require [compojure.core :refer [routes wrap-routes]]
+            [skidskytte.layout :refer [error-page]]
+            [skidskytte.routes.home :refer [home-routes]]
+            [skidskytte.routes.services :refer [service-routes]]
             [compojure.route :as route]
-            [skidskytte.namer :as namer]
-            [skidskytte.views :as views]
-            [ring.adapter.jetty :as jetty]))
+            [skidskytte.env :refer [defaults]]
+            [mount.core :as mount]
+            [skidskytte.middleware :as middleware]))
 
-(defroutes app-routes
-  (GET "/" [] (views/main (namer/new-sport)))
-  (GET "/api/random" [] (namer/new-sport))
-  (route/resources "/")
-  (route/not-found "Not Found"))
+(mount/defstate init-app
+                :start ((or (:init defaults) identity))
+                :stop  ((or (:stop defaults) identity)))
 
-(def app
-  (handler/site app-routes))
+(def app-routes
+  (routes
+    (-> #'home-routes
+        (wrap-routes middleware/wrap-csrf)
+        (wrap-routes middleware/wrap-formats))
+    #'service-routes
+    (route/not-found
+      (:body
+        (error-page {:status 404
+                     :title "page not found"})))))
 
-(defn -main [& args]
-  (jetty/run-jetty app {:port (Integer. (first args)) :join? false}))
+
+(defn app [] (middleware/wrap-base #'app-routes))
