@@ -14,7 +14,8 @@
                         (swap! state assoc :sport sport))}))
 
 (defn link []
-  [:a {:on-click fetch-sport!} "nåt annat"])
+  [:a {:href "#"
+       :on-click fetch-sport!} "något annat"])
 
 (defn mount-components []
   (r/render [#'sport] (.getElementById js/document "sport"))

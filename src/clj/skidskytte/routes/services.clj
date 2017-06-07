@@ -13,8 +13,8 @@
 
   (swagger/context "/api" []
 
-                   (GET "/new-sport" []
-                        :return       {:sport s/Str}
-                        :query-params []
-                        :summary      "Returns a new fun sport!"
-                        (response/ok {:sport (namer/new-sport)}))))
+                   (swagger/GET "/new-sport" []
+                                :return       {:sport s/Str}
+                                :query-params []
+                                :summary      "Returns a new fun sport!"
+                                (response/ok {:sport (namer/new-sport)}))))
