@@ -20,11 +20,13 @@ h1, p {
 
 .sport {
 
-	padding: 20px;
-	font-size: 1.4em;
-	font-weight: bold;
-	background-color: #0F4DA8;
-	color: white;
+	  padding: 4em;
+	  font-size: 1.6em;
+	  font-weight: bold;
+	  background-image:  url("/img/bg.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+	  color: white;
 }
 
 .something-else {
