@@ -11,8 +11,8 @@
                            :title "Skidskytteroulette API"
                            :description "For all your sportsing needs"}}}}
 
-  (swagger/context "/api" []
-
+  (swagger/context "/api"
+                   []
                    (swagger/GET "/new-sport" []
                                 :return       {:sport s/Str}
                                 :query-params []

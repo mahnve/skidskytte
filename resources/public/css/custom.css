@@ -1,21 +1,20 @@
 body {
-
 	  background-color: lightgrey;
 	  color: #333;
 }
 .container {
-	background-color: #eee;	
-	max-width: 768px;
-	min-height: 1000px;
-	margin: 0 auto;    
+	  background-color: #eee;	
+	  max-width: 768px;
+	  min-height: 1000px;
+	  margin: 0 auto;    
 }
 
 .inner {
-	padding: 20px;
+	  padding: 20px;
 }
 
 h1, p {
-	text-align: center;
+	  text-align: center;
 }
 
 .sport {
@@ -30,8 +29,8 @@ h1, p {
 }
 
 .something-else {
-	padding: 20px;
-	font-style: italic;
+	  padding: 20px;
+	  font-style: italic;
 }
 
 .social {
