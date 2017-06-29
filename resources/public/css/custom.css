@@ -26,6 +26,7 @@ h1, p {
     color: #eee;
     text-transform: uppercase;
     background-color: steelblue;
+    text-shadow: 2px 2px 5px #111;
 
 }
 
