@@ -17,16 +17,22 @@
 (def tweet-button "<a href=\"https://twitter.com/share\" class=\"twitter-share-button\" data-url=\"http://www.skidskytteroulette.se\" data-text=\"Hitta din nya sport på \" data-lang=\"sv\">Tweeta</a>
   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>")
 
-(def google-analytics "<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-160245-6', 'skidskytteroulette.se');
-  ga('send', 'pageview');
-
-  </script>")
+(def piwik "<!-- Piwik -->
+  <script type=\"text/javascript\">
+  var _paq = _paq || [];
+  /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=\"//analytics.marcusahnve.org/\";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '3']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+  </script>
+  <noscript><p><img src=\"//analytics.marcusahnve.org/piwik.php?idsite=3&rec=1\" style=\"border:0;\" alt=\"\" /></p></noscript>
+  <!-- End Piwik Code --> ")
 
 (defn script [src]
   [:script {:type "text/javascript" :src src}])
@@ -50,7 +56,8 @@
     (hp/include-css "/assets/bootstrap/css/bootstrap.min.css")
     (hp/include-css "/assets/font-awesome/css/font-awesome.min.css")
     (hp/include-css "/css/screen.css")
-    (hp/include-css "/css/custom.css")]
+    (hp/include-css "/css/custom.css")
+    piwik]
    [:body
     [:div.container
      [:div.inner
@@ -62,4 +69,4 @@
       [:div.fb-like.social fb-like-button]
       [:div.tweet-button.social tweet-button]]]
     (script "/js/app.js")
-    [:div google-analytics fb-api]]))
+    [:div fb-api]]))
