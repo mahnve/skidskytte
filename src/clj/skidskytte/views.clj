@@ -41,7 +41,8 @@
     (hp/include-css "/assets/bootstrap/css/bootstrap.min.css")
     (hp/include-css "/assets/font-awesome/css/font-awesome.min.css")
     (hp/include-css "/css/screen.css")
-    (hp/include-css "/css/custom.css")]
+    (hp/include-css "/css/custom.css")
+    matomo]
    [:body
     [:div.container
      [:div.inner
@@ -50,5 +51,4 @@
       [:p#sport.sport [:span sport]]
       [:p.something-else "Nja, det låter trist, jag vill pröva "
        [:span#link [:a {:href "/"} "något annat"]]]]]
-    (script "/js/app.js")
-    [:div matomo]]))
+    (script "/js/app.js")]))

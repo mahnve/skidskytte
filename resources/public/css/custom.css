@@ -19,13 +19,15 @@ h1, p {
 
 .sport {
 
-	  padding: 4em;
-	  font-size: 1.6em;
+	  padding: 1em ;
+	  font-size: 2em;
 	  font-weight: bold;
-	  background-image:  url("/img/bg.svg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-	  color: white;
+    color: #eee;
+    text-transform: uppercase;
+    background-color: steelblue;
+    text-shadow: 2px 2px 5px #111;
+
 }
 
 .something-else {
