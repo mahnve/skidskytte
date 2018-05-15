@@ -1,6 +1,5 @@
 (ns skidskytte.core
   (:require [reagent.core :as r]
-            [reagent.session :as session]
             [ajax.core :as ajax]))
 
 (def state (r/atom {}))
