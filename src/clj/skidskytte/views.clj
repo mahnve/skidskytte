@@ -19,9 +19,6 @@
   </script>
   <!-- End Matomo Code -->")
 
-(defn script [src]
-  [:script {:type "text/javascript" :src src}])
-
 (defn style [href]
   [:link {:rel :stylesheet :href href}])
 
@@ -51,4 +48,4 @@
       [:p#sport.sport [:span sport]]
       [:p.something-else "Nja, det låter trist, jag vill pröva "
        [:span#link [:a {:href "/"} "något annat"]]]]]
-    (script "/js/app.js")]))
+    (hp/include-js "/js/app.js")]))
