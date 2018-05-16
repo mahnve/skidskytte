@@ -2,7 +2,6 @@
   (:require [hiccup.core :as h]
             [hiccup.page :as hp]))
 
-
 (def matomo "<!-- Matomo -->
   <script type=\"text/javascript\">
   var _paq = _paq || [];
@@ -18,15 +17,6 @@
   })();
   </script>
   <!-- End Matomo Code -->")
-
-(defn style [href]
-  [:link {:rel :stylesheet :href href}])
-
-(defn styles [& urls]
-  (for [url urls] (style url)))
-
-(defn js-var [var value]
-  (str "var " (name var) "=" value ";"))
 
 (defn base [sport]
   (hp/html5
