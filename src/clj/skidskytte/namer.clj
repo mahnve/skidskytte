@@ -10,8 +10,8 @@
                     "nordisk"
                     "norsk"
                     "rysk"
-                    "tysk"
-                    ])
+                    "tysk"])
+
 (def prefixes [
                "armbrytnings"
                "backhoppnings"
@@ -100,8 +100,8 @@
                "undervattens"
                "vatten"
                "volleyboll"
-               "windsurfings"
-               ])
+               "windsurfings"])
+
 
 (def suffixes [
                "armbrytning"
@@ -186,8 +186,8 @@
                "tresteg"
                "volleyboll"
                "windsurfing"
-               "varpa"
-               ])
+               "varpa"])
+
 
 
 (defn random-word [word-list]
