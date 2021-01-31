@@ -29,13 +29,14 @@
     (hp/include-css "/assets/font-awesome/css/font-awesome.min.css")
     (hp/include-css "/css/screen.css")
     (hp/include-css "/css/custom.css")
+    (hp/include-js "https://cdn.skypack.dev/pin/@hotwired/turbo@v7.0.0-beta.4-TQFv5Y2xd4hn2VnTxVul/min/@hotwired/turbo.js")
     matomo]
    [:body
     [:div.container
      [:div.inner
       [:h1 "Skidskytteroulette"]
       [:p "Om du gillar skidskytte och nordisk kombination så kanske du också gillar"]
-      [:p#sport.sport [:span sport]]
+      [:turbo-frame#sport
+       [:p.sport [:span sport]]]
       [:p.something-else "Nja, det låter trist, jag vill pröva "
-       [:span#link [:a {:href "/"} "något annat"]]]]]
-    (hp/include-js "/js/app.js")]))
+       [:span#link [:a {:href "/"} "något annat"]]]]]]))
