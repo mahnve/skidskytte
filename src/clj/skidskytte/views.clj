@@ -36,7 +36,7 @@
      [:div.inner
       [:h1 "Skidskytteroulette"]
       [:p "Om du gillar skidskytte och nordisk kombination så kanske du också gillar"]
-      [:turbo-frame#sport
+      [:turbo-frame#the-sport
        [:p.sport [:span sport]]]
       [:p.something-else "Nja, det låter trist, jag vill pröva "
        [:span#link [:a {:href "/"} "något annat"]]]]]]))
