@@ -29,7 +29,9 @@
     (hp/include-css "/assets/font-awesome/css/font-awesome.min.css")
     (hp/include-css "/css/screen.css")
     (hp/include-css "/css/custom.css")
-    (hp/include-js "https://unpkg.com/@hotwired/turbo@7.0.0-beta.3/dist/turbo.es5-umd.js")
+    [:script {:type "text/javascript"
+              :crossorigin "anonymous"
+              :src "https://unpkg.com/@hotwired/turbo@7.0.0-beta.3/dist/turbo.es5-umd.js"}]
     matomo]
    [:body
     [:div.container
